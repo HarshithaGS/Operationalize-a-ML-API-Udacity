@@ -5,11 +5,16 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+export dockerpath=harshitha95/demokube
+
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker tag demokube:latest harshitha95/demokube:latest
+
 
 # Step 3:
 # Push image to a docker repository
+docker push harshitha95/demokube:latest
+
